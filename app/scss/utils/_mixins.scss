@@ -1,0 +1,83 @@
+@use 'functions' as f;
+
+/* text styles -  buttons */
+@mixin button-text {
+	font-size: f.rem(16);
+	font-weight: 900;
+	line-height: 1.5;
+}
+
+/* text styles - Mobile */
+@mixin heading1-mobile {
+	font-size: f.rem(40);
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+@mixin heading2-mobile {
+	font-size: f.rem(32);
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+@mixin subheading-mobile {
+	font-size: f.rem(12);
+	font-weight: 900;
+	line-height: 1.1;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+/* text styles - tablet */
+@mixin heading1-tablet {
+	font-size: f.rem(48);
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+@mixin heading2-tablet {
+	font-size: f.rem(36);
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+@mixin subheading-tablet {
+	font-size: f.rem(14);
+	font-weight: 900;
+	line-height: 1.1;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+@mixin body-tablet_mobile {
+	font-size: f.rem(16);
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+/* text styles - desktop */
+@mixin heading1-desktop {
+	font-size: f.rem(64);
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+@mixin heading2-desktop {
+	font-size: f.rem(40);
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+@mixin subheading-desktop {
+	font-size: f.rem(16);
+	font-weight: 900;
+	line-height: 1.1;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+@mixin body-desktop {
+	font-size: f.rem(18);
+	font-weight: 500;
+	line-height: 1.5;
+}
