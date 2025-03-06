@@ -45,8 +45,9 @@ button {
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
-		width: 100%;
+		width: 100vw;
 		height: u.rem(303);
+		margin-inline: -2rem;
 
 		@media screen and (min-width: 1440px) {
 			height: 0;
@@ -101,6 +102,18 @@ button {
 		@include u.body-tablet_mobile;
 	}
 
+	.button__container {
+		display: grid;
+		gap: 17px;
+		justify-items: center;
+
+		@media screen and (min-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			justify-items: stretch;
+		}
+	}
+
 	&__button-download {
 		background-color: var(--cyan-600);
 		color: var(--white);
@@ -108,7 +121,7 @@ button {
 		@include u.button-text;
 
 		@media screen and (min-width: 768px) {
-			margin-right: u.rem(8.5);
+			// margin-right: u.rem(8.5);
 		}
 
 		&:hover {
@@ -119,12 +132,12 @@ button {
 	&__button-info {
 		background-color: var(--purple-600);
 		color: var(--white);
-		margin-top: u.rem(16);
+		// margin-top: u.rem(16);
 
 		@include u.button-text;
 
 		@media screen and (min-width: 768px) {
-			margin-left: u.rem(8.5);
+			// margin-left: u.rem(8.5);
 		}
 
 		&:hover {
@@ -143,6 +156,7 @@ button {
 	&__number-container {
 		display: grid;
 		justify-items: center;
+		margin-top: u.rem(120);
 
 		&:last-child {
 			margin-top: g.$space-64;
@@ -281,7 +295,7 @@ button {
 
 		@include u.button-text;
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1000px) {
 			grid-column: 10/13;
 			margin-top: 0;
 		}

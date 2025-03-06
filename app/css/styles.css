@@ -101,8 +101,9 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 100%;
+  width: 100vw;
   height: 18.9375rem;
+  margin-inline: -2rem;
 }
 @media screen and (min-width: 1440px) {
   .banner__image-container {
@@ -157,6 +158,18 @@ button {
   font-weight: 500;
   line-height: 1.5;
 }
+.banner .button__container {
+  display: grid;
+  gap: 17px;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .banner .button__container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: stretch;
+  }
+}
 .banner__button-download {
   background-color: var(--cyan-600);
   color: var(--white);
@@ -164,26 +177,15 @@ button {
   font-weight: 900;
   line-height: 1.5;
 }
-@media screen and (min-width: 768px) {
-  .banner__button-download {
-    margin-right: 0.53125rem;
-  }
-}
 .banner__button-download:hover {
   background-color: #71c0d4;
 }
 .banner__button-info {
   background-color: var(--purple-600);
   color: var(--white);
-  margin-top: 1rem;
   font-size: 1rem;
   font-weight: 900;
   line-height: 1.5;
-}
-@media screen and (min-width: 768px) {
-  .banner__button-info {
-    margin-left: 0.53125rem;
-  }
 }
 .banner__button-info:hover {
   background-color: #b18bdd;
@@ -199,6 +201,7 @@ button {
 .main__number-container {
   display: grid;
   justify-items: center;
+  margin-top: 7.5rem;
 }
 .main__number-container:last-child {
   margin-top: 4rem;
@@ -337,7 +340,7 @@ button {
   font-weight: 900;
   line-height: 1.5;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .footer__button-download {
     grid-column: 10/13;
     margin-top: 0;
